@@ -1,0 +1,23 @@
+# Site Information
+title: "Ludenwright"
+description: "A hub for game developers to collaborate and playtest."
+baseurl: ""  # Leave blank unless using a subdirectory
+url: "https://sharisel.github.io"  # Change to your actual GitHub Pages URL
+
+# Jekyll Theme (GitHub Pages defaults to "minima" if not set)
+theme: minima  # Remove if using custom HTML/CSS
+
+# Plugins (GitHub Pages supports these by default)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap  # Generates a sitemap.xml
+#  - jekyll-seo-tag  # Improves SEO
+
+# Directory Exclusions (Prevents unnecessary files from being processed)
+exclude:
+  - "node_modules"
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - ".github/"
+  - "vendor/"
