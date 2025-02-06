@@ -5,7 +5,7 @@ baseurl: ""  # Leave blank unless using a subdirectory
 url: "https://sharisel.github.io"  # Change to your actual GitHub Pages URL
 
 # Jekyll Theme (GitHub Pages defaults to "minima" if not set)
-theme: minima  # Remove if using custom HTML/CSS
+# theme: minima  # Remove if using custom HTML/CSS
 
 # Plugins (GitHub Pages supports these by default)
 plugins:
