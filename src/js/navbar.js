@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
             // Adjust link paths dynamically based on the current page location
             const isSubpage = window.location.pathname.includes("/pages/");
 
-            document.getElementById("home-link").href = isSubpage ? "../index.html" : "index.html";
-            document.getElementById("home-nav").href = isSubpage ? "../index.html" : "index.html";
+            document.getElementById("home-link").href = isSubpage ? "../index.html" : "../index.html";
+            document.getElementById("home-nav").href = isSubpage ? "../index.html" : "../index.html";
             document.getElementById("about-nav").href = isSubpage ? "about.html" : "pages/about.html";
         });
 });

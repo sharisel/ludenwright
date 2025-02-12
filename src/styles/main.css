@@ -16,6 +16,7 @@ body {
     font-size: xx-large;
     text-align: var(--text-align, left);
     padding-bottom: var(--pad-bottom, none);
+    padding-top: var(--pad-top, none);
 }
 
 .subtitle {
@@ -37,8 +38,8 @@ body {
     font-style: var(--font-style, none);
     color: white;
     padding-top: 20px;
-    padding-left: 50px;
-    text-align: left;
+    padding-left: var(--padding-left, 10px);
+    text-align: var(--text-align, left);
     word-spacing: 2px;
 }
 
@@ -71,6 +72,74 @@ body {
         font-size: 24px;
         color: white;
         text-align: center; /* Ensures text inside is centered */
+}
+
+.box-container {
+    display: flex;       /* Makes boxes appear side by side */
+    justify-content: center; /* Centers boxes horizontally */
+    gap: var(--box-gap, 20px);          /* Adds spacing between boxes */
+    margin-top: var(--top-margin, 20px);    /* Adds space from the top */
+}
+
+.box {
+    width: var(--box-width, 250px);       /* Set box width */
+    height: 150px;      /* Set box height */
+    background-color: var(--box-color,#0E0067); /* Box color */
+    color: white;       /* Text color */
+    font-size: 18px;    /* Font size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; /* Adds rounded corners */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+    overflow: hidden;
+    position: relative;
+}
+
+.header-box
+{
+    width: var(--box-width, 100%);       /* Set box width */
+    height: 150px;      /* Set box height */
+    background-color: var(--box-color,#0E0067); /* Box color */
+    color: white;       /* Text color */
+    font-size: 18px;    /* Font size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 90px 0px 90px;; /* Adds rounded corners */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+    overflow: hidden;
+    position: relative;
+}
+
+.box p {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    overflow-wrap: break-word;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.default-text {
+    font-size: medium;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.hover-text {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.box:hover .default-text {
+    opacity: 0;
+}
+
+.box:hover .hover-text {
+    opacity: 1;
 }
 
 .footer {
